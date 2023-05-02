@@ -1,0 +1,108 @@
+ Okay, in this video, I'm going to have a quick look at a new TTS system that is kind of released or demos that have been released called Bach.
+ And this comes from a company called Suno.
+ So I think they're just launching at the moment.
+ You can basically join their waitlist to get access to this.
+ So they have put up a GitHub to basically go through it and show off some demos.
+ They've also released a collab, which I'll go through in a second.
+ We can have a look at how to use it, what the quality is, et cetera.
+ It's a very interesting kind of system in that what they're doing is taking some ideas from a few other TTS things.
+ But the sort of unique things in here is that they're trying to put in stuff that where it can sing and where you can add in different elements to this.
+ So one of them is speaker prompts.
+ So you can actually basically put different speakers in there and the model can start to work this out.
+ Unfortunately, in the versions that I've been playing with, it seems that you're limited to
+ 1024 tokens going in, which works out, I think, to roughly about 14 seconds of audio.
+ So you've kind of just got two lines or two sentences, two, three sentences that you can basically put in here.
+ It's got some really interesting things here.
+ It's like the valley model that came out a couple months back.
+ It's using a transformer, Dakota kind of model, a GPT style model.
+ They've added in some nice things where they've got tokens for things like laughter, laugh, size, and also things like music in here,
+ which is interesting.
+ So they're also supporting multilingual stuff.
+ So that's kind of cool of what they're doing.
+ Currently, the license for this is non-commercial.
+ This is due to this encodec model, which I'm pretty sure comes from Facebook that they're using there.
+ They do mention that the sooner models themselves may be used commercially.
+ So my guess is they're also looking to get customers for this, which makes sense.
+ So let's have a listen to some of the examples for it.
+ So just sort of straight up things.
+ The model is called bark, like Clifford, the big red dog or or.
+ So we can hear that it's definitely quite nice.
+ The tone and stuff like that.
+ I do like the meta tags that they've got here.
+ So you've got this meta tag of sad and then your size in there.
+ So let's listen to this one.
+ My friend's bakery burned down last night.
+ Now his business is toast.
+ OK, so the pros of the voice is definitely something that's kind of interesting in here, how they've got it to be sad in that case.
+ Then they've got this sort of sigh in there as well, which is interesting.
+ They've all about laughter in there.
+ I got a face for radio and like, what did they say?
+ Voice for for print.
+ OK, so we can see the laughter and stuff in there as well.
+ They've also got a number of multilingual voices.
+ They've got examples in their coming and have a look at this.
+ One of the nice things is it can also handle code switching, whereas code switching is basically where you're in one language.
+ You change to another language, you come back.
+ This has become very common now with a lot of languages where you'll see certain words or just in English or certain phrases or in English, but then people go back to their native tongue for the rest of it.
+ So they've released a hanging face demo.
+ Here it is.
+ You can come in and try it yourself.
+ And this seems to let you pick the speaker, let you try a bunch of different things you can put in the different meta tags in there for trying it out.
+ The other thing that they've also released is a collab.
+ So here I've basically set this up and this is just running their collab.
+ I just playing around with it a little bit.
+ You can find that it gets some nice things, although you often have to generate multiple times to get a nice voice.
+ Oh, my name is Sino and I am.
+ I like pizza.
+ So we can hear that there's a really bad distortion on that voice there.
+ But then if we regenerate it, oh, my miss you know, and I like pizza.
+ OK, so totally different voice.
+ My guess is this is the way that the sort of speaker embedding or whatever they're using for that kind of initializing each time.
+ So each time we basically generate, we get a different voice in here.
+ Some nice examples of the code switching that they've got.
+ When is the asked me to call it up?
+ You're not going to say it's only man is ex telemada minty manu.
+ But I suppose you're in the issue.
+ So they really and then got some different things of where the speaker prompts.
+ So this is the speaker prompt idea here, I think is really cool.
+ This is where you've got two speakers and just by prompting it, the model can change from one speaker to the other.
+ So this is done through it gets converted to a token that represents a different speaker.
+ I would like an old male glaupe, please.
+ Wow, that's expensive.
+ So that's something nice.
+ Unfortunately, when I tried to to make this longer.
+ I love not an old me not.
+ Sharon, we don't get that great generation.
+ So you would need to probably generate a few times to get something that's really nice.
+ You can also pass in the guide that the actual speaker in here.
+ So this history prompt.
+ I have a silky smooth voice.
+ And today I will tell you about the exercise regimen of the common sloth.
+ So that's really nice that we can sort of select something like this.
+ We're all so supposed to be a trigger singing.
+ So we're by putting the sort of music sign around this.
+ I've had mixed results with this.
+ Thank you.
+ OK, so yes, it's definitely singing not with the greatest of voices there.
+ That's something that my guess is that if you do generate, I did find the to be fair to them.
+ If you generate a number of times, you will get a nice one and perhaps some of the ones
+ that they've got on their examples are kind of cherry picked for that.
+ But tomorrow I can sing and I can.
+ Map.
+ OK, so that's a really nice use of the meditag here of this laughs and it comes out
+ quite well.
+ The same thing with a different speaker.
+ But tomorrow I can sing and I can laugh.
+ And so it OK, now it actually generated other text there that wasn't even there in this one.
+ Anyway, it's definitely an interesting model.
+ My guess is that they will improve this, you know, quite a bit before they release it.
+ You come in and you can look at the code.
+ You can actually look at the different transformer models that they've got in here.
+ If you want to have a look at what's going on with that.
+ And overall, you can just have a play with it.
+ That's kind of interesting just to see where things are at with this kind of thing.
+ Anyway, if you've got any questions, please put them in the comments.
+ And as always, if you found this useful, please click like and subscribe.
+ I will see you in the next video.
+ Bye for now.
+ [ Silence ]
