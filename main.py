@@ -2,7 +2,7 @@ import streamlit as st
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import TextLoader
 from langchain.vectorstores import Chroma
-from langchain import PromptTemplate, LLMBashChain
+from langchain import PromptTemplate, LLMChain
 from langchain.llms import OpenAI
 
 
