@@ -1,0 +1,24 @@
+{
+    "default_index": [
+        {
+            "start": null,
+            "step": null,
+            "stop": null
+        }
+    ],
+    "groups": [],
+    "hidden_tensors": [],
+    "tensor_names": {
+        "embedding": "embedding",
+        "ids": "ids",
+        "metadata": "metadata",
+        "text": "text"
+    },
+    "tensors": [
+        "text",
+        "metadata",
+        "embedding",
+        "ids"
+    ],
+    "version": "3.4.0"
+}

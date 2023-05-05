@@ -1,16 +1,15 @@
 import streamlit as st
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import TextLoader
-from langchain.vectorstores import Chroma
+from langchain.vectorstores import DeepLake
 from langchain import PromptTemplate, LLMChain
 from langchain.llms import OpenAI
+from langchain.embeddings.openai import OpenAIEmbeddings
 
 
-loader = TextLoader('video_transcription/final_file')
-docs = loader.load()
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=0)
-docs = text_splitter.split_documents(docs)
-db = Chroma.from_documents(docs)
+
+embeddings = OpenAIEmbeddings()
+db = DeepLake(dataset_path="./my_deeplake/", embedding_function=embeddings, read_only=True)
 
 st.set_page_config(page_title="Andrej Karpathy Chat Bot", page_icon=":robot:")
 st.header('Andrej Karpathy Bot')
