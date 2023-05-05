@@ -48,6 +48,6 @@ if query:
     Question: {query}
     Answer:"""
 
-    prompt = PromptTemplate(template=template, input_variables=["ans","query"])
+    prompt = PromptTemplate(template=template, input_variables=["context","query"])
     llm_chain = LLMChain(prompt=prompt, llm=llm)
     st.write(llm_chain.predict(context = context, query = query))
