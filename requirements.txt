@@ -1,5 +1,6 @@
 langchain
 huggingface_hub
-chromadb
 streamlit
 openai
+deeplake
+tiktoken
