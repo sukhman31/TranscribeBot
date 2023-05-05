@@ -37,14 +37,17 @@ def get_text():
 query = get_text()
 
 if query:
-    ans = db.similarity_search(query,k=1)
-    ans = ans[0].page_content
+    ans = db.similarity_search(query,k=5)
+    context = ""
+    for i in range(5):
+        context += ans[i].page_content
+        context += "\n"
     llm = OpenAI(temperature=0)
     template="""Please use the following context to answer questions.
-    Context: {ans}
+    Context: {context}
     Question: {query}
     Answer:"""
 
     prompt = PromptTemplate(template=template, input_variables=["ans","query"])
     llm_chain = LLMChain(prompt=prompt, llm=llm)
-    st.write(llm_chain.predict(ans = ans, query = query))
+    st.write(llm_chain.predict(context = context, query = query))
