@@ -1,11 +1,8 @@
 import streamlit as st
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.document_loaders import TextLoader
 from langchain.vectorstores import DeepLake
 from langchain import PromptTemplate, LLMChain
 from langchain.llms import OpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
-
 
 
 embeddings = OpenAIEmbeddings()
